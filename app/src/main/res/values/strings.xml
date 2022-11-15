@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cleaning Management System</string>
+    <string-array name="slot">
+        <item>Pending</item>
+        <item>Completed</item>
+    </string-array>
+    <string-array name="usertype">
+        <item>Contractor</item>
+        <item>Supervisor</item>
+        <item>Railway Admin</item>
+    </string-array>
+</resources>

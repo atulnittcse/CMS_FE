@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "65186459795",
+    "project_id": "cms-dev-41eb0",
+    "storage_bucket": "cms-dev-41eb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65186459795:android:b03363eaeff6c7c1211d66",
+        "android_client_info": {
+          "package_name": "com.cms.android.cleaningmanagementsystem.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65186459795-3ii4npgu1okcl8qk1iq68mlg5r27fvbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAUG_rHylIgnSm028iTQXaMt8ARl7JYro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65186459795-3ii4npgu1okcl8qk1iq68mlg5r27fvbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

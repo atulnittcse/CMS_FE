@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:text="Rating Today"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/main_color"
+        android:textStyle="bold"
+        android:id="@+id/tv_rating_today"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:text="Rating of a Specific Date"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/main_color"
+        android:textStyle="bold"
+        android:id="@+id/tv_rating_specificdate"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_today"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="Write Rating on Today"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/main_color"
+        android:textStyle="bold"
+        android:id="@+id/tv_writerating_on_today"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_specificdate"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="Write Rating on Specific Date"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/main_color"
+        android:textStyle="bold"
+        android:id="@+id/tv_writerating_on_specificdate"
+        app:layout_constraintTop_toBottomOf="@id/tv_writerating_on_today"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="Assign Editable Special Request"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/main_color"
+        android:textStyle="bold"
+        android:id="@+id/tv_assigneditablespecialrequest"
+        app:layout_constraintTop_toBottomOf="@id/tv_writerating_on_specificdate"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:text="Logout"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/main_color"
+        android:textStyle="bold"
+        android:id="@+id/tv_logout"
+        app:layout_constraintTop_toBottomOf="@id/tv_assigneditablespecialrequest"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

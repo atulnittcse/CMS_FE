@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.cms.android.cleaningmanagementsystem.app.ui.SplashScreenFragment"
+        android:label="SplashScreenFragment" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.cms.android.cleaningmanagementsystem.app.ui.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.cms.android.cleaningmanagementsystem.app.ui.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_submitFragment"
+            app:destination="@id/submitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/submitFragment"
+        android:name="com.cms.android.cleaningmanagementsystem.app.ui.SubmitFragment"
+        android:label="SubmitFragment" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.cms.android.cleaningmanagementsystem.app.ui.DashboardFragment"
+        android:label="DashboardFragment" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_viewRatingSpecificDateFragment"
+            app:destination="@id/viewRatingSpecificDateFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_viewRatingTodayFragment"
+            app:destination="@id/viewRatingTodayFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_writeTodayRatingFragment"
+            app:destination="@id/writeTodayRatingFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_assignRoleFragment"
+            app:destination="@id/assignRoleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewRatingSpecificDateFragment"
+        android:name="com.cms.android.cleaningmanagementsystem.app.ui.rate.ViewRatingSpecificDateFragment"
+        android:label="ViewRatingSpecificDateFragment" />
+    <fragment
+        android:id="@+id/viewRatingTodayFragment"
+        android:name="com.cms.android.cleaningmanagementsystem.app.ui.rate.ViewRatingTodayFragment"
+        android:label="ViewRatingTodayFragment" />
+    <fragment
+        android:id="@+id/writeTodayRatingFragment"
+        android:name="com.cms.android.cleaningmanagementsystem.app.ui.rate.WriteTodayRatingFragment"
+        android:label="WriteTodayRatingFragment" >
+        <action
+            android:id="@+id/action_writeTodayRatingFragment_to_submitFragment"
+            app:destination="@id/submitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setPermissionFragment"
+        android:name="com.cms.android.cleaningmanagementsystem.app.ui.assign.SetPermissionFragment"
+        android:label="SetPermissionFragment" />
+    <fragment
+        android:id="@+id/assignRoleFragment"
+        android:name="com.cms.android.cleaningmanagementsystem.app.ui.assign.AssignRoleFragment"
+        android:label="AssignRoleFragment" >
+        <action
+            android:id="@+id/action_assignRoleFragment_to_setPermissionFragment"
+            app:destination="@id/setPermissionFragment" />
+    </fragment>
+</navigation>
